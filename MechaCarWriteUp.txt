@@ -1,0 +1,57 @@
+**MPG Regression**
+
+For the MPG Regression section of the challenge, I downloaded the MechaCar_mpg dataset and used multiple linear regression to design a linear model in order to predict the mpg of MechaCar prototypes using the following variables:
+	-Vehicle length
+	-Vehicle weight
+	-Spoiler angle
+	-Ground clearance and
+	-All wheel drive (AWD).
+
+After analyzing the summary statistics of the linear model using multiple linear regression, it was concluded that only two variables provided a non-random amount of variance to the mpg values in the dataset:
+	-Vehicle length with a Pr(>|t|) of 5.08e-08 and
+	-Ground clearance with a Pr(>|t|) of 5.21e-08
+
+Since linear regression tests for the following hypothesis:
+	H0: The slope of the linear model is zero
+	HA: The slope of the linear model is not zero
+	
+we can conclude (based on our previous results) that the slope of our linear model is not zero as our null hypothesis would be rejected. 
+
+Finally, having an r-squared value of 0.7149 with only two significant variables is evidence of overfitting. The model performs well with a current dataset, but fails to generalize and predict future data correctly.
+Having this said, the linear model would not predict mpg of MechaCar prototypes effectively.
+
+
+**Suspension Coil Summary**
+
+Summary Statistics Table for Suspension Coil's Pounds-per-Inch (PSI)
+	-Mean = 1499.531
+	-Median = 1499.747
+	-Variance = 76.23459
+	-Standard Deviation = 8.731242
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch and the 
+current manufacturing data shows the the variance is 76.23459, which does meet the design specification that they require. 
+
+
+**Suspension Coil T-Test**
+
+After conducting a One Sample t-test in order to compare the Sample Mean PSI of 1,499.531 versus the Population Mean of 1,500 PSI,
+our p-value = 0.5117 was above our significance level of the common 0.05 percent, therefore we do not have sufficient evidence to reject the null hypothesis
+and we would state that the two means are statistically similar.
+
+
+**Design Your Own Study**
+
+The MechaCar prototype vehicle can outperform the competition as it is ultimately the lightest vehicle in the market and comes with pre-installed aftermarket car parts and accessories.
+-Coilover kit,
+-Springs and Shocks
+-Racing wheels,
+-Racing tires,
+
+Null Hypothesis- Having a light weight vehicle, with an aftermarket coilover kit, springs and shocks and adding racing wheels and tires does not have an effect on the vehicle performance.
+
+Alternative Hypothesis- Having a light weight vehicle with an aftermarket coilover kit, springs and shocks and adding racing wheels and tires does have an effect on the vehicle performance.
+
+Statistical testing we can do to test the hypothesis includes comparing vehicle weight and height changes (why coilovers are designed) versus mpg using linear models and multiple linear regression.
+We can also use Two-Sample t-test to determine if there's a statistical difference between the distribution means from two samples. In this case we can use it for the racing wheels sample and the racing 
+tires sample in which we would obtain means on both categories as to what the average speed can increase by changing the original equipment tires and wheels to racing tires and wheels. 
